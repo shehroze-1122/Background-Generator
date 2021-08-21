@@ -4,7 +4,8 @@ var linerGradient=document.querySelector("h3");
 var body=document.getElementById("gradient")
 
 function addGradient(){
-  body.style.background = "linear-gradient(to right, "+color1.value + ", "+color2.value +")";
+  body.style.background = `linear-gradient(to right,${color1.value},${color2.value})`;
+  console.log(body.style.background)
   linerGradient.textContent = body.style.background + ";";
 }
 
