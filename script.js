@@ -4,8 +4,8 @@ var linerGradient=document.querySelector("p");
 var body=document.getElementById("gradient")
 
 function addGradient(){
-  body.style.background = `linear-gradient(to right,${color1.value},${color2.value})`;
-  linerGradient.textContent = body.style.background + ";";
+  body.style.backgroundImage = `linear-gradient(to right,${color1.value},${color2.value})`;
+  linerGradient.textContent = body.style.backgroundImage + ";";
 }
 
 color1.addEventListener("input",addGradient);
